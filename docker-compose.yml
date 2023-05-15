@@ -6,7 +6,6 @@ services:
     container_name: mysqldb
     ports:
       - "3307:3306"
-    restart: always
     networks: 
       - springboot-mysql-net 
     environment:
@@ -42,9 +41,6 @@ services:
       - mysqldb
     networks:
       - springboot-mysql-net
-    restart: on-failure
-  
-
 
 networks:
   springboot-mysql-net:
