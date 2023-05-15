@@ -8,5 +8,3 @@
         dest: ./
     - name: Pull the Docker images specifed in docker-compose
       command: docker-compose pull
-    - name: Running Docker Compose File
-      command: docker-compose up -d
